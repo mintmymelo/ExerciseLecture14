@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // IBOutlets
+    @IBOutlet weak var blue: UIImageView!
+    @IBOutlet weak var red: UIImageView!
+    
+    @IBOutlet weak var hideBlueButton: UIButton!
+    @IBOutlet weak var hideRedButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // IBActions
+    @IBAction func hideBlue(sender: AnyObject) {
+        blue.hidden = true
+    }
+    
+    @IBAction func hideRed(sender: AnyObject) {
+        red.hidden = true
+    }
+    
+    
 }
 
